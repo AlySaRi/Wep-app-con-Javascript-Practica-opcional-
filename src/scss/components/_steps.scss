@@ -1,0 +1,240 @@
+.bloque {
+    display: flex;
+    flex-direction: column;
+
+    .type-step {
+        display: flex;
+        height: 80px;
+        background-color: $color-less-is-less;
+        justify-content: center;
+        font-size: $font-size-h1;
+
+        h1 {
+            color:$color-SkyBlue1;
+            padding-top: 20px;
+            font-weight: bold;
+        }
+        .subtituloTipo {
+            
+            margin-left: -90px;
+            font-weight: normal;
+            font-size: $font-size-h2;
+            padding-top: 60px;
+            font-weight: bold;
+        }
+
+    }
+
+    .steps-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        order: 1;
+        margin-top: 30px;
+
+        @include if-desktop {
+            flex-direction: row;
+        }
+
+        .paso-item {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            height: 800px;
+
+            @include if-mobile-landscape {
+                flex-direction: row;
+                height: 550px;
+            }
+
+            @include if-desktop {
+                flex-direction: column;
+                height: 900px;
+            }
+
+        &.uno {
+           background-color: transparentize($color-brown-bronze, 0.7);
+           @include if-desktop {
+               flex: 7;
+               order:1;
+           }
+
+           img{
+                @include if-desktop {
+                order: 1;
+                }
+           }   
+        }
+        &.dos {
+            background-color: transparentize($color-silver, 0.2);
+            @include if-desktop {
+                flex: 10;
+                order:2;
+            }
+
+            img{
+                @include if-mobile-landscape{
+                order: -1;
+                }
+           }
+
+         }
+         &.tres {
+            background-color: transparentize($color-brown-bronze, 0.7);
+            @include if-desktop {
+                flex: 7;
+                order:3;
+            }
+        }
+        &.cuatro {
+            background-color: transparentize($color-silver, 0.2);
+            @include if-desktop {
+                flex: 7;
+                order:4;
+                
+            }
+ 
+            img{
+                 @include if-desktop {
+                    order: -1;
+                    
+                 }
+                 @include if-mobile-landscape{
+                    order: -1;
+                    }
+            }   
+         }
+         &.cinco {
+            background-color: transparentize($color-brown-bronze, 0.7);
+            @include if-desktop {
+                flex: 10;
+                order:5;
+            }
+ 
+            img{
+                 @include if-desktop {
+                 order: 1;
+                 }
+            }   
+         }
+         &.seis {
+            background-color: transparentize($color-silver, 0.2);
+            @include if-desktop {
+                flex: 7;
+                order:6;
+            }
+ 
+            img{
+                 @include if-desktop {
+                    order: -1;
+                 }
+                 @include if-mobile-landscape{
+                    order: -1;
+                    }
+            }   
+         }
+        
+         
+
+        
+
+         .img-steps{
+             max-width: 95%;
+             height: 300px;
+             min-width: 300px;
+
+            @include if-mobile-landscape {
+                max-width: 95%;
+                height: 350px;
+                min-width: 350px;
+                }
+
+            @include if-desktop {
+                max-width: 95%;
+                height: 300px;
+                min-width: 300px;
+                }
+           
+         }
+
+         .informacion {
+             display: flex;
+             flex-direction: column;
+             align-items: center;
+             width: 90%;
+
+             @include if-mobile-landscape {
+                width: 40%;
+                }
+
+            @include if-desktop {
+                width: 80%;
+                }
+
+             .numero {
+                 font-family: $title-font-family;
+                 font-size: $font-size-h3;
+                 padding-top: 15px;
+                 padding-bottom: 30px; 
+             }
+
+             .subtitulo {
+                 font-size: $font-size-h5;
+                 color: $color-SkyBlue1;
+                 padding-bottom: 15px;
+             }
+
+             .texto {
+                 font-size: $font-size-base;
+                 padding-bottom: 20px;
+                 line-height: 1.7em;
+
+                 .cursiva {
+                     font-style: italic;
+                 }
+                 .bold {
+                    font-weight: bold;
+                }
+                .upper {
+                    text-transform: uppercase;
+                }
+             }
+             
+         }
+         ul {
+             padding-left: 20px;
+             list-style-type: disc;  
+             
+             .cursiva {
+                font-style: italic;
+            }
+            
+         }
+
+        .nestle{
+            font-weight: bold;
+            font-size: $font-size-small2;
+        }
+        .chocolate {
+            font-weight: bold;
+            font-size: $font-size-small2;
+            text-transform: uppercase;
+        }
+
+         a {
+             text-decoration: none;
+             color: $main-text-color;
+         }
+
+         a:hover {
+            color: $links-color;
+            text-decoration: underline;
+        }
+
+        
+
+        }
+
+    }
+}

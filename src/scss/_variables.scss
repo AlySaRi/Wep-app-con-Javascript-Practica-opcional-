@@ -1,0 +1,46 @@
+// Font families
+$main-font-family: 'Barlow', sans-serif;
+$title-font-family:'Signika', sans-serif;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 16px;
+$font-size-small: $font-size-base - 4px;
+$font-size-small2: $font-size-base - 2px;
+$font-size-large: $font-size-base + 4px;
+$font-size-h1: $font-size-base + 16px;
+$font-size-h2: $font-size-base + 8px;
+$font-size-h3: $font-size-base + 6px;
+$font-size-h4: $font-size-base + 4px;
+$font-size-h5: $font-size-base + 2px;
+$font-size-h6: $font-size-base;
+
+// Base colors
+$color-SkyBlue1: #75DDD6;
+$color-DarkRed: rgb(48, 2, 17);
+$color-Red: #F8695B;
+$color-grey: rgb(121, 116, 118);
+$color-cEment-gRAY: rgb(70, 70, 69);
+$color-brown-bronze: rgb(206, 183, 124);
+$color-less-is-less: #f8f5ee;
+$color-silver: rgb(255, 255, 255);
+
+// Main components colors
+$main-text-color: $color-cEment-gRAY;
+$links-color: $color-DarkRed;
+$links-color2: $color-grey;
+
+// Responsive
+// 557 iphone landscape, 768 ipad portrait
+$mobile-portrait-width: 414px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width +1;
+$tablet-landscape-width: 1024px;
+
+// Forms variables
+$form-input-border-color: $color-cEment-gRAY;
+$form-input-outline-color: $color-cEment-gRAY;
+$form-button-background-color: $color-cEment-gRAY;
+$form-button-font-color: $color-less-is-less;
+$form-error-background-color: $color-SkyBlue1;
+$form-error-font-color: $color-less-is-less;

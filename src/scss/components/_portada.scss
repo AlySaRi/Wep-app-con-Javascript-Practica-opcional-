@@ -1,0 +1,13 @@
+.title-img{
+    background-size: 85% 85%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: url(img/brownie.jpg);
+    height: 100vh;
+    transition: background-size 0.5s;
+    margin-top: -55px;
+
+    &:hover {
+        background-size: 100% 100%;
+    }
+}

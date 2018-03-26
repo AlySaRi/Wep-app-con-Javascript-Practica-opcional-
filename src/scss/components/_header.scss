@@ -1,0 +1,52 @@
+.web-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 4px 8px 4px 0;
+    box-sizing: border-box;
+    background: fade-out($color-brown-bronze, 0.12);
+    color: $color-silver;
+    text-align: center;
+    
+    &:hover{
+        background: $color-brown-bronze;
+    }
+    
+    position: fixed;
+    top: 0px;
+    width: 100%;
+
+    .web-title {
+        display: flex;
+        font-size: $font-size-large;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 35%;
+        a {
+            text-decoration:none;
+            color:inherit;   
+        }
+    }
+
+    .form-search {
+        display: flex;
+        align-items: center;
+
+        a {
+            text-decoration:none;
+            color:inherit;   
+        }
+
+        a:hover {
+            color: $links-color;
+        }
+        .busquedas {
+            widows: 150px;
+            margin-left: 15x;
+            margin-top: 10px;
+            padding: 5px;
+            background-color: $color-silver;
+
+        }
+    }
+}
